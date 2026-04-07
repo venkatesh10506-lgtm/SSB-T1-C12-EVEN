@@ -86,7 +86,11 @@ ylabel("Magnitude")
 
 xgrid();
 ```
+
+
 OUTPUT GRAPH:
+
+
 ![WhatsApp Image 2026-04-07 at 11 51 28 AM](https://github.com/user-attachments/assets/3c0fbab6-8eed-4ce2-ad93-32bc795f1bff)
 <img width="770" height="508" alt="Screenshot 2026-04-07 115116" src="https://github.com/user-attachments/assets/64ec43a0-41d9-4f8e-b943-57218819abdb" />
 
