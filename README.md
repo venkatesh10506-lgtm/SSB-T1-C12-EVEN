@@ -31,8 +31,69 @@ PROCEDURE:
 6.Verify the generated results
 
 PROGRAM:
+```
+clc;
+clear;
 
+// Parameters
+Ac = 15.7;
+Am = 31.8;
+fm = 566;
+fc = 5660;
+fs = 56600;
+
+// Time axis (short window)
+t = 0:1/fs:0.05;
+
+// SSB signals
+LSB = Am*cos(2*%pi*(fc-fm)*t);
+USB = Am*cos(2*%pi*(fc+fm)*t);
+
+// Plot LSB
+subplot(4,1,1)
+plot(t,LSB)
+title("SSB Modulated Signal (LSB)")
+xlabel("time")
+ylabel("Amplitude")
+
+// Plot USB
+subplot(4,1,2)
+plot(t,USB)
+title("SSB Modulated Signal (USB)")
+xlabel("time")
+ylabel("Amplitude")
+
+// Spectrum
+N = length(t);
+f = (-N/2:N/2-1)*(fs/N);
+
+LSB_spec = abs(fftshift(fft(LSB)));
+USB_spec = abs(fftshift(fft(USB)));
+
+// LSB Spectrum
+subplot(4,1,3)
+plot(f,LSB_spec)
+title("SSB Signal Spectrum (LSB)")
+xlabel("Frequency")
+ylabel("Magnitude")
+
+// USB Spectrum
+subplot(4,1,4)
+plot(f,USB_spec)
+title("SSB Signal Spectrum (USB)")
+xlabel("Frequency")
+ylabel("Magnitude")
+
+xgrid();
+```
 OUTPUT GRAPH:
+![WhatsApp Image 2026-04-07 at 11 51 28 AM](https://github.com/user-attachments/assets/3c0fbab6-8eed-4ce2-ad93-32bc795f1bff)
+<img width="770" height="508" alt="Screenshot 2026-04-07 115116" src="https://github.com/user-attachments/assets/64ec43a0-41d9-4f8e-b943-57218819abdb" />
+
+Tabulation: 
+![WhatsApp Image 2026-04-07 at 11 51 27 AM](https://github.com/user-attachments/assets/b2bb472a-2846-4e4c-8146-6f831e600ee5)
 
 RESULT:
+Thus, the SSB-SC-AM Modulation and Demodulation is experimentally done and the output is verified.
+
 
