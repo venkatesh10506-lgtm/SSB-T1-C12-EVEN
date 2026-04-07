@@ -94,7 +94,9 @@ OUTPUT GRAPH:
 ![WhatsApp Image 2026-04-07 at 11 51 28 AM](https://github.com/user-attachments/assets/3c0fbab6-8eed-4ce2-ad93-32bc795f1bff)
 <img width="770" height="508" alt="Screenshot 2026-04-07 115116" src="https://github.com/user-attachments/assets/64ec43a0-41d9-4f8e-b943-57218819abdb" />
 
-Tabulation: 
+
+Tabulation:
+
 ![WhatsApp Image 2026-04-07 at 11 51 27 AM](https://github.com/user-attachments/assets/b2bb472a-2846-4e4c-8146-6f831e600ee5)
 
 RESULT:
